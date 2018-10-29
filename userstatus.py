@@ -19,6 +19,13 @@ async def on_ready():
     print(bot.user.id)
     print('------')
 
+def main():
+    getUser('186439054139588608')
 
+def getUser(id):
+    flaz = server.get_member('self',id)
+    print(flaz)
 
-bot.run('email','pass')
+if __name__ == '__main__':
+    bot.run('email','pass')
+    main()
